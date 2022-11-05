@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Loftygoals;
+    src: url(../Font/LoftygoalsRegular.otf);
+}
+
+@font-face {
+    font-family: Qumpellkano12;
+    src: url(../Font/Qumpellkano12.otf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right,#ece9e6,#ffffff);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 610px;
+}
+
+h1 {
+    margin: 50px 0 50px;
+    font-family: Loftygoals;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.suchleiste {
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 02);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 0px 20px;
+    margin: 10px auto;
+}
+
+.suchleiste input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 1.3em;
+    color:black;
+}
+
+::placeholder {
+    text-align: center;
+    padding-right: 35px;
+}
+
+#colorTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: Qumpellkano12;
+    font-size: 1.1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout: fixed;
+}
+
+#colorTable th {
+   background-color: grey;
+   color: #FFFF;
+   text-align: left;
+   font-weight: bold;
+}
+
+#colorTable th,
+#colorTable td {
+   padding: 12px 15px;
+}
+
+#colorTable tr {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#colorTable tr:hover {
+    background-image: linear-gradient(to left, #f7ff00,#db36a4);
+    color: #FFFF;
+}
+
+/*
+#colorTable tr:nth-of-type(even) {
+    background-color: #F3F3F3;
+}
+*/
