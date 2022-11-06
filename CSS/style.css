@@ -41,7 +41,7 @@ h1 {
     -moz-text-fill-color: transparent;
 }
 
-.suchleiste {
+.searchbar {
     width: 100%;
     max-width: 300px;
     background: rgba(255, 255, 255, 02);
@@ -52,7 +52,7 @@ h1 {
     margin: 10px auto;
 }
 
-.suchleiste input {
+.searchbar input {
     background: transparent;
     flex: 1;
     border: 0;
@@ -64,7 +64,7 @@ h1 {
 
 ::placeholder {
     text-align: center;
-    padding-right: 35px;
+    padding-right: 40px;
 }
 
 #colorTable {
@@ -104,10 +104,25 @@ h1 {
 }
 */
 
+button {
+    position: relative;
+    margin-left: 50px;
+}
+
+footer {
+    text-align: center;
+    margin: 4%;
+    padding-right: 20px;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 610px) {
     body {
-        background-image: linear-gradient(to right,#FFFF,#ffffff);
+        background-image: linear-gradient(to right,#FFFF,#FFFFFF);
+    }
+
+    .searchbar {
+        border: 1px solid;
     }
   }
