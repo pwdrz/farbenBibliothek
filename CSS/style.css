@@ -129,6 +129,10 @@ footer {
     body {
         background-image: linear-gradient(to right,#FFFF,#FFFFFF);
     }
+    
+    .container {
+        width: 350px;
+    }
 
     .searchbar {
         border: 1px solid;
