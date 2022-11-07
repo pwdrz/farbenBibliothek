@@ -129,12 +129,28 @@ footer {
     body {
         background-image: linear-gradient(to right,#FFFF,#FFFFFF);
     }
-    
+
+    h1 {
+        font-size: 3.5em;
+    }
+
     .container {
-        width: 350px;
+        width: 60%;
     }
 
     .searchbar {
         border: 1px solid;
     }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .searchbar {
+        min-width: 150px;
+    }
+
+    ::placeholder {
+        padding-right: 100px;
+    }
+
+
   }
