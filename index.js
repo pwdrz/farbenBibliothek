@@ -48,7 +48,7 @@ function tableSearch() {
 
     // Variablen mit DOM befüllen
     input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
+    filter = input.value.toUpperCase(); // Filter für case insensitive 
     table = document.getElementById("colorTable");
     tr = table.getElementsByTagName("tr");
 
