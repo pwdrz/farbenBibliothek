@@ -12,6 +12,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 body {
@@ -68,7 +69,6 @@ h1 {
 
 ::placeholder {
     text-align: center;
-    padding-right: 40px;
 }
 
 /* TABELLE */
@@ -78,7 +78,7 @@ h1 {
     margin: 25px 0;
     font-family: Qumpellkano12;
     font-size: 1.1em;
-    min-width: 220px;
+    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     table-layout: fixed;
 }
@@ -119,38 +119,22 @@ button {
 
 footer {
     text-align: center;
-    margin: 4%;
-    padding-right: 20px;
+    margin: 5% 0 5%;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERY */
 
 @media only screen and (max-width: 610px) {
     body {
         background-image: linear-gradient(to right,#FFFF,#FFFFFF);
     }
 
-    h1 {
-        font-size: 3.5em;
-    }
-
     .container {
-        width: 60%;
+        width: 100%;
     }
 
     .searchbar {
+        max-width: 180px;
         border: 1px solid;
     }
-  }
-
-  @media only screen and (max-width: 430px) {
-    .searchbar {
-        min-width: 150px;
-    }
-
-    ::placeholder {
-        padding-right: 100px;
-    }
-
-
   }
